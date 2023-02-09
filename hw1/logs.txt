@@ -1,0 +1,42 @@
+***Import an instance***
+Start locations
+. . @ . . . . . 
+. 0 . @ . . . . 
+. . @ . . . . . 
+. . . . . . . . 
+. . . 1 . . . @ 
+. . . . . @ . . 
+. . . . . . @ . 
+. . . . . . . . 
+
+Goal locations
+. . @ . . . . . 
+. . . @ . . . . 
+. . @ . . . . . 
+0 . . . . . . . 
+. 1 . . . . . @ 
+. . . . . @ . . 
+. . . . . . @ . 
+. . . . . . . . 
+
+***Run JointState***
+Len(open_list)  : 1
+-------------------
+curr_node :  {'loc': [(1, 1), (4, 3)], 'g_val': 0, 'h_val': 5, 'parent': None}
+-------------------
+curr_node :  {'loc': [(1, 0), (4, 2)], 'g_val': 2, 'h_val': 3, 'parent': {'loc': [(1, 1), (4, 3)], 'g_val': 0, 'h_val': 5, 'parent': None}}
+-------------------
+curr_node :  {'loc': [(2, 0), (4, 1)], 'g_val': 4, 'h_val': 1, 'parent': {'loc': [(1, 0), (4, 2)], 'g_val': 2, 'h_val': 3, 'parent': {'loc': [(1, 1), (4, 3)], 'g_val': 0, 'h_val': 5, 'parent': None}}}
+-------------------
+curr_node :  {'loc': [(2, 1), (4, 2)], 'g_val': 2, 'h_val': 3, 'parent': {'loc': [(1, 1), (4, 3)], 'g_val': 0, 'h_val': 5, 'parent': None}}
+-------------------
+curr_node :  {'loc': [(3, 1), (4, 1)], 'g_val': 4, 'h_val': 1, 'parent': {'loc': [(2, 1), (4, 2)], 'g_val': 2, 'h_val': 3, 'parent': {'loc': [(1, 1), (4, 3)], 'g_val': 0, 'h_val': 5, 'parent': None}}}
+-------------------
+curr_node :  {'loc': [(3, 0), (4, 1)], 'g_val': 6, 'h_val': 0, 'parent': {'loc': [(2, 0), (4, 1)], 'g_val': 4, 'h_val': 1, 'parent': {'loc': [(1, 0), (4, 2)], 'g_val': 2, 'h_val': 3, 'parent': {'loc': [(1, 1), (4, 3)], 'g_val': 0, 'h_val': 5, 'parent': None}}}}
+Found the solution
+
+ Found a solution! 
+
+CPU time (s):    0.00
+Sum of costs:    5
+***Test paths on a simulation***
